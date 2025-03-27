@@ -14,7 +14,7 @@ const config: QuartzConfig = {
         enablePopovers: true,
         analytics: {
             provider: "google",
-            tagId: "obsidian-quartz",
+            tagId: "G-DL7EDZTE63",
         },
         locale: "ja-JP",
         baseUrl: "quartz.jzhao.xyz",

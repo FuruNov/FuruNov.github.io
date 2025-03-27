@@ -9,13 +9,14 @@ import * as Plugin from "./quartz/plugins"
 const config: QuartzConfig = {
     configuration: {
         pageTitle: "Takanobu Furuhashi",
-        pageTitleSuffix: "",
+        pageTitleSuffix: " - Takanobu Furuhashi",
         enableSPA: true,
         enablePopovers: true,
         analytics: {
-            provider: "plausible",
+            provider: "google",
+            tagId: "obsidian-quartz",
         },
-        locale: "en-US",
+        locale: "ja-JP",
         baseUrl: "quartz.jzhao.xyz",
         ignorePatterns: ["private", "templates", ".obsidian"],
         defaultDateType: "modified",

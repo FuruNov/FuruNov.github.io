@@ -17,7 +17,7 @@ const config: QuartzConfig = {
             tagId: "G-DL7EDZTE63",
         },
         locale: "ja-JP",
-        baseUrl: "quartz.jzhao.xyz",
+        baseUrl: "furunov.github.io",
         ignorePatterns: ["private", "templates", ".obsidian"],
         defaultDateType: "modified",
         theme: {

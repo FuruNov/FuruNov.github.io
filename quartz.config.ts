@@ -18,7 +18,7 @@ const config: QuartzConfig = {
         },
         locale: "ja-JP",
         baseUrl: "furunov.github.io",
-        ignorePatterns: ["private", "templates", ".obsidian"],
+        ignorePatterns: ["private", "templates", ".obsidian", "memory_bank"],
         defaultDateType: "modified",
         theme: {
             fontOrigin: "googleFonts",

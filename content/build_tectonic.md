@@ -2,7 +2,12 @@
 title: Tectonic で日本語 LaTeX 環境構築
 draft: false
 tags:
+    - LaTeX
+    - Tectonic
 ---
+
+※ 本記事は2022年に書いた記事を更新したものです．少々情報が古いかもしれません．
+
 # はじめに
 Tectonic は Rust 製のモダンな LaTeX 組版エンジンです
 XeTeX と TexLive を元にして作られています

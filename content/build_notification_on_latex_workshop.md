@@ -1,8 +1,13 @@
 ---
 title: LaTeX Workshop でビルド完了通知を出す（MacOS）
 draft: false
-tags:
+tags: 
+  - LaTeX
+  - VSCode
+  - MacOS
 ---
+
+※ 本記事は2022年に書いた記事を更新したものです．少々情報が古いかもしれません．
 
 # はじめに
 

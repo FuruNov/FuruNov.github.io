@@ -2,7 +2,13 @@
 title: TypeScript と Repl it で Discord Bot を動かしてみる
 draft: false
 tags:
+    - TypeScript
+    - Repl.it
+    - Discord Bot
 ---
+
+※ 本記事は2021年に書いた記事を移植したものです．少々情報が古いかもしれません．
+
 # 概要
 [TECHCAFE×TAIR Advent Calender](https://qiita.com/advent-calendar/2021/techcafe_tair)の20日目です． 本日は TypeScript と Repl.it を用いて，Discord Bot を作成する方法を解説します． この Bot はユーザーが入力したコマンドに対して応答を行います． また，説明にあたって Repl.it の[テンプレート](https://replit.com/@FuruNov/ts-disbot-template?v=1)を作りました． これを Fork することで，手軽に Bot を動かすことができます．
 

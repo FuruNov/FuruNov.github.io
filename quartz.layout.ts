@@ -11,6 +11,9 @@ export const sharedPageComponents: SharedLayout = {
         links: {
             "Google Scholar": "https://scholar.google.com/citations?user=gvYEpF0AAAAJ",
             "researchmap": "https://researchmap.jp/takanobu-furuhashi",
+            "Twitter (Researcher Account)": "https://twitter.com/furu_nov",
+            "Twitter (Daily Account)": "https://twitter.com/nov_sin_k",
+            "Annict": "https://annict.com/@Nov/watching",
         },
     }),
 }
@@ -19,7 +22,6 @@ export const mapFn: Options["mapFn"] = (node) => {
     const prefixDict: { [key: string]: string } = {
         "スパース": "0️⃣",
         "深層学習": "🧠",
-        "機械学習": "🤖",
         "LaTeX": "✒️",
         // 必要に応じて他のタグも追加
     }

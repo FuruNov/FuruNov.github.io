@@ -18,7 +18,7 @@ const config: QuartzConfig = {
         },
         locale: "en-US",
         baseUrl: "furunov.github.io",
-        ignorePatterns: ["private", "templates", ".obsidian", "memory_bank"],
+        ignorePatterns: ["private", "templates", ".obsidian", "memory_bank", "assets/*.pdf", "assets/*.bib"],
         defaultDateType: "modified",
         theme: {
             fontOrigin: "googleFonts",
@@ -75,7 +75,7 @@ const config: QuartzConfig = {
             }),
             Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
             Plugin.GitHubFlavoredMarkdown(),
-            Plugin.TableOfContents(),
+            Plugin.TableOfContents({ minEntries: 1 }),
             Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
             Plugin.Description(),
             Plugin.Latex({ renderEngine: "katex" }),

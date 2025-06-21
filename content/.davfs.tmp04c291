@@ -172,7 +172,6 @@ LOP-$\ell_2/\ell_1$は線形拡張ラグランジュ法を用いることで，$
 このアプローチにより，LOP-$\ell_2/\ell_1$は理論的に優れているだけでなく，実用的な時間で高品質な解を得ることが可能な，極めて実用的な適応的ブロックスパース正則化手法となっています．
 
 # まとめ
-
 ブロックスパース正則化は，一見すると複雑に思えるかもしれませんが，本質的には「関連する要素をまとめて考慮する」という，極めて自然な発想から生まれた手法です．
 
 特にLOP-$\ell_2/\ell_1$の登場により，「理論的には優れているものの実用性に課題がある」という従来の問題が一挙に解決されたことは，特筆すべき成果です．
@@ -184,9 +183,11 @@ LOP-$\ell_2/\ell_1$の応用研究は，現状圧縮センシングや画像処�
 もしスパース推定に関わる機会がありましたら，ぜひこのブロックスパース正則化も選択肢の一つとしてご検討ください．データに何らかの構造的特性が見られる場合，本手法は非常に有効なアプローチとなるでしょう．
 
 # 参考文献
-
 技術的な詳細や実装に関心のある方は，以下の文献を参照してください：
 
 [1] H. Kuroda and D. Kitahara, "Block-sparse recovery with optimal block partition," IEEE Transactions on Signal Processing, vol. 70, pp. 1506–1520, 2022, doi: 10.1109/TSP.2022.3156283.
+
+[@9729560]
+[@furuhashiAdaptiveBlockSparse2024]
 
 [2] T. Furuhashi, H. Hontani and T. Yokota, "Adaptive Block Sparse Regularization Under Arbitrary Linear Transform," 2024 32nd European Signal Processing Conference (EUSIPCO), Lyon, France, 2024, pp. 2437-2441, doi: 10.23919/EUSIPCO63174.2024.10714986.

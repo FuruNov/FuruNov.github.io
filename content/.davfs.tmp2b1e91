@@ -92,8 +92,8 @@ $$
 $\ell_1$ノルムの近接写像がソフト閾値処理であるのに対し，混合$\ell_2/\ell_1$ノルムの近接写像は**ブロック単位**での閾値処理を行います．これにより，ブロック内に非ゼロ成分が含まれていても，ブロック全体の評価に基づいてスパース性を判定するため，より構造的な解が得られます．
 
 # LOP-$\ell_2/\ell_1$：最適なブロック構造における混合$\ell_2/\ell_1$ノルム
-
-LOP-$\ell_2/\ell_1$（Latent Optimally Partitioned $\ell_2/\ell_1$）は，適応的ブロックスパース正則化において極めて重要な手法です．従来手法の限界を克服し，理論的にも実用的にも優れた性能を実現します．
+[@furuhashiAdaptiveBlockSparse2024]
+LOP-$\ell_2/\ell_1$（Latent Optimally Partitioned $\ell_2/\ell_1$, [@9729560]）は，適応的ブロックスパース正則化において極めて重要な手法です．従来手法の限界を克服し，理論的にも実用的にも優れた性能を実現します．
 
 ## 凸緩和によるブロック構造推定のNP困難性解消
 
@@ -186,7 +186,3 @@ LOP-$\ell_2/\ell_1$の応用研究は，現状圧縮センシングや画像処�
 # 参考文献
 
 技術的な詳細や実装に関心のある方は，以下の文献を参照してください：
-
-[1] H. Kuroda and D. Kitahara, "Block-sparse recovery with optimal block partition," IEEE Transactions on Signal Processing, vol. 70, pp. 1506–1520, 2022, doi: 10.1109/TSP.2022.3156283.
-
-[2] T. Furuhashi, H. Hontani and T. Yokota, "Adaptive Block Sparse Regularization Under Arbitrary Linear Transform," 2024 32nd European Signal Processing Conference (EUSIPCO), Lyon, France, 2024, pp. 2437-2441, doi: 10.23919/EUSIPCO63174.2024.10714986.

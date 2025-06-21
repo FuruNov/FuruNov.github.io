@@ -189,4 +189,7 @@ LOP-$\ell_2/\ell_1$の応用研究は，現状圧縮センシングや画像処�
 
 [1] H. Kuroda and D. Kitahara, "Block-sparse recovery with optimal block partition," IEEE Transactions on Signal Processing, vol. 70, pp. 1506–1520, 2022, doi: 10.1109/TSP.2022.3156283.
 
+[@9729560]
+[@furuhashiAdaptiveBlockSparse2024]
+
 [2] T. Furuhashi, H. Hontani and T. Yokota, "Adaptive Block Sparse Regularization Under Arbitrary Linear Transform," 2024 32nd European Signal Processing Conference (EUSIPCO), Lyon, France, 2024, pp. 2437-2441, doi: 10.23919/EUSIPCO63174.2024.10714986.

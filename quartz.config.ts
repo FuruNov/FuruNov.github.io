@@ -16,7 +16,7 @@ const config: QuartzConfig = {
             provider: "google",
             tagId: "G-DL7EDZTE63",
         },
-        locale: "ja-JP",
+        locale: "en-US",
         baseUrl: "furunov.github.io",
         ignorePatterns: ["private", "templates", ".obsidian", "memory_bank"],
         defaultDateType: "modified",
@@ -80,6 +80,9 @@ const config: QuartzConfig = {
             Plugin.Description(),
             Plugin.Latex({ renderEngine: "katex" }),
             Plugin.HardLineBreaks(),
+            Plugin.Citations({
+                csl: "./ieee.csl",
+            }),
         ],
         filters: [Plugin.RemoveDrafts()],
         emitters: [

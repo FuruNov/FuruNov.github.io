@@ -34,7 +34,7 @@ $$
 
 なぜこの$\ell_1$ノルム項がスパース性（多くの要素がゼロになる性質）を生み出すのでしょうか？その理由は，$\ell_1$ノルムの幾何学的な形状にあります．2次元の場合，$\ell_1$ノルムが一定値をとる点の集合（等高線）は，原点を中心としたひし形（ダイヤモンド）になります．一方，最小二乗項$||\boldsymbol{y} - \boldsymbol{A}\boldsymbol{x}||_2^2$の等高線は楕円です．この楕円が$\ell_1$ノルムのひし形と「初めて」接する点が最適解となることが多いのですが，ひし形は各座標軸上で尖っているため，接点が軸上に位置しやすく，結果としてその軸に対応する要素がゼロになる傾向が生まれるのです．
 
-<iframe src="https://www.desmos.com/calculator/bxgbgq4ybd?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+<iframe src="https://www.desmos.com/calculator/bxgbgq4ybd?embed" width="500" height="500" style="border: 1px solid" frameborder=0></iframe>
 
 この$\ell_1$ノルム正則化（Lasso）は，数学的な「凸最適化」の枠組みで扱うことができます．凸最適化問題は，局所最適解が必ず大域最適解と一致するという素晴らしい性質があり，計算が非常に安定しています．実際，ISTA (Iterative Shrinkage Thresholding Algorithm)やFISTA(Fast ISTA)といった効率的なアルゴリズムによって，大規模な問題でも比較的容易に解くことができます．これがLassoが広く普及した大きな理由の一つです．
 
@@ -52,7 +52,7 @@ $$
 
 と定義されます．この式をよく見てみると，$|v|$が$\lambda$より小さい場合は**強制的にゼロ**にされます．また，$|v|$が$\lambda$より大きい場合でも，$|v|$から一律に$\lambda$が**差し引かれて**しまいます．
 
-<iframe src="https://www.desmos.com/calculator/khpj0yrgv1?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+<iframe src="https://www.desmos.com/calculator/khpj0yrgv1?embed" width="500" height="500" style="border: 1px solid" frameborder=0></iframe>
 
 つまり，真の値$v$が本来ゼロでない小さな値だったとしても，このソフトしきい値処理を通すとゼロになってしまうか，あるいは真の値よりも$\lambda$だけ小さく評価されてしまうのです．これが「縮小バイアス」の正体です．特に信号処理の分野などでは，信号の小さな成分も重要な情報を含んでいる場合が多く，このような縮小バイアスは，信号の歪みや情報の欠落を引き起こす原因となり得ます．
 

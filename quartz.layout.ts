@@ -11,8 +11,10 @@ export const sharedPageComponents: SharedLayout = {
         links: {
             "Google Scholar": "https://scholar.google.com/citations?user=gvYEpF0AAAAJ",
             "researchmap": "https://researchmap.jp/takanobu-furuhashi",
-            "Twitter (Researcher Account)": "https://twitter.com/furu_nov",
-            "Twitter (Daily Account)": "https://twitter.com/nov_sin_k",
+            "LinkedIn": "https://www.linkedin.com/in/%E6%95%AC%E4%BF%A1-%E5%8F%A4%E6%A9%8B-b9633931b",
+            "Facebook": "https://www.facebook.com/profile.php?id=61561850712844",
+            "Twitter (Researcher)": "https://twitter.com/furu_nov",
+            "Twitter (Daily)": "https://twitter.com/nov_sin_k",
             "Annict": "https://annict.com/@Nov/watching",
         },
     }),

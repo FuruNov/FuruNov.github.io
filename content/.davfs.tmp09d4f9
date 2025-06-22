@@ -53,7 +53,7 @@ $$
 と定義されます．この式をよく見てみると，$|v|$が$\lambda$より小さい場合は**強制的にゼロ**にされます．また，$|v|$が$\lambda$より大きい場合でも，$|v|$から一律に$\lambda$が**差し引かれて**しまいます．
 
 <iframe src="https://www.desmos.com/calculator/khpj0yrgv1?embed" width="500" height="500" style="border: 1px solid" frameborder=0></iframe>
-↑ 青線：ソフトしきい値処理を施す前の値． 赤線：ソフトしきい値処理を施した後の値．
+↑ 青線：ソフトしきい値処理を施す前の値．
 
 つまり，真の値$v$が本来ゼロでない小さな値だったとしても，このソフトしきい値処理を通すとゼロになってしまうか，あるいは真の値よりも$\lambda$だけ小さく評価されてしまうのです．これが「縮小バイアス」の正体です．特に信号処理の分野などでは，信号の小さな成分も重要な情報を含んでいる場合が多く，このような縮小バイアスは，信号の歪みや情報の欠落を引き起こす原因となり得ます．
 
@@ -98,28 +98,24 @@ $$
 ## $\ell_p$ノルム（$0<p<1$）
 
 最もシンプルな非凸正則化の一つが，$\ell_p$ノルムの$p$乗です（厳密には$\ell_p$準ノルムと呼びます）．
+
 $$
 ||\boldsymbol{x}||_p^p = \sum_{i=1}^N |x_i|^p
 $$
-<iframe src="https://www.desmos.com/calculator/e5ykegirlx?embed" width="500" height="500" style="border: 1px solid" frameborder=0></iframe>
-
-↑ $\ell_p$ノルムの等高線（$p=0.5$, $0 \leq ||\boldsymbol{x}||_p^p \leq 10$）．青の点を動かすと $p$ の値が変わり，$\ell_p$ノルムの等高線が変化する様子がわかります．
 
 これは$\ell_1$ノルム($p=1$)や$\ell_2$ノルム($p=2$)の一般化と考えられますが，$0<p<1$の場合，関数$f(t) = |t|^p$は原点付近で非常に尖った（非凸な）形状をしています．この$p$の値を小さくするほど，関数の形状は$\ell_0$ノルム（非ゼロなら定数，ゼロならゼロ）に近づき，より強力なスパース性が促進されますが，同時に非凸性も増し，最適化はより難しくなります．
 
 ## MCP（Minimax Concave Penalty）
 
 MCPは，2010 年に Zhangによって提案された非凸スパース正則化関数です．定義は以下のようになります．
+
 $$
 \text{MCP}_{\lambda, \gamma}(x) =
 \begin{cases}
 \lambda |x| - \frac{x^2}{2\gamma} & (|x| \leq \gamma\lambda) \\
-    \frac{\gamma\lambda^2}{2} & (|x| > \gamma\lambda)
+\frac{\gamma\lambda^2}{2} & (|x| > \gamma\lambda)
 \end{cases}
 $$
-<iframe src="https://www.desmos.com/calculator/9hbfbxlkln?embed" width="500" height="500" style="border: 1px solid" frameborder=0></iframe>
-
-↑ MCP の等高線 $0 \leq \text{MCP}_{\lambda, \gamma}(x) + \text{MCP}_{\lambda, \gamma}(y) \leq 10$．青の点を動かすと $(\lambda, \gamma)$ の値が変わり，MCPの等高線が変化する様子がわかります．
 
 こちらも$\lambda > 0$，$\gamma > 1$はパラメータです．MCPは，原点付近では$\ell_1$ノルムに似た形状を持ちますが，値が大きくなるにつれてペナルティが緩やかになり，ある値（$|x| > \gamma\lambda$）を超えるとペナルティが飽和します． **$\ell_1$ ノルムのように無限にペナルティが増えることを防ぐ** ことで，縮小バイアスを抑制しつつ，スパース性を強化する効果があります．
 
@@ -129,12 +125,10 @@ Reverse Ordered Weighted $\ell_1$（ROWL）は，2024 年に Sasaki らによっ
 ROWLは，要素の絶対値の「順序」に着目して重みを付ける Ordered Weighted $\ell_1$ (OWL) を発展させた手法です．OWLは一般的に凸ですが，その拡張であるROWLは非凸となります．
 
 ROWLの正則化項は，以下のようになります．
+
 $$
 \text{ROWL}_{\boldsymbol w}(\boldsymbol{x}) = \sum_{i=1}^N w_i |x|_{[i]}
 $$
-<iframe src="https://www.desmos.com/calculator/bcn4xxbrwk?embed" width="500" height="500" style="border: 1px solid" frameborder=0></iframe>
-
-↑ ROWL の等高線 $0 \leq \text{ROWL}_{\boldsymbol w}(x, y) \leq 10$．青の点を動かすと $\boldsymbol{w}=(w_1,w_2)$ の値が変わり，ROWLの等高線が変化する様子が見て取れます．
 
 ここで$|x|_{[i]}$は，ベクトル$\boldsymbol{x}$の各成分の絶対値を大きい順に並べたときの$i$番目の値です．そして，$w_1 \geq w_2 \geq \cdots \geq w_N \geq 0$は事前に与えられる重みベクトルです．
 

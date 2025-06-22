@@ -30,9 +30,9 @@ R(\boldsymbol{x}) = \|\boldsymbol{x}\|_1 = \sum_i |x_i|
 $$
 この正則化項は，最適化の過程で多くのパラメータを厳密にゼロにできるため，不要な特徴量を自動的に削減し，モデルをシンプルにする効果があります．
 
-しかし，この式の$|x_i|$の項は，$x_i=0$ の点で微分係数が定義できません．これが，SGDのような勾配を必要とするアルゴリズムを直接使えない根本的な原因です．そのため，近接写像（proximal mapping）という特殊な演算を用いた**近接勾配法**などの専用アルゴリズムが必要となり，実装がやや煩雑になるという課題がありました．
+<iframe src="https://www.desmos.com/calculator/qantb32m34?embed" width="500" height="500" style="border: 1px solid" frameborder=0></iframe>
 
-<iframe src="https://www.desmos.com/calculator/jffeht6eer?embed" width="500" height="500" style="border: 1px solid" frameborder=0></iframe>
+しかし，この式の$|x_i|$の項は，$x_i=0$ の点で微分係数が定義できません．これが，SGDのような勾配を必要とするアルゴリズムを直接使えない根本的な原因です．そのため，近接写像（proximal mapping）という特殊な演算を用いた**近接勾配法**などの専用アルゴリズムが必要となり，実装がやや煩雑になるという課題がありました．
 
 # 微分可能なスパース正則化：重み分解という発想
 

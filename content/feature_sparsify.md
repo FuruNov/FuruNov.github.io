@@ -61,6 +61,12 @@ $$
 
 画像データは，「ほとんどの領域は滑らかで，値が急激に変化するのは物体の輪郭（エッジ）部分だけ」という強い構造を持っています．この性質に基づき，隣接ピクセル間の「差分」を取ると，エッジ以外の大部分はゼロに近くなります．この「差分信号のスパース性」を利用するのが，画像処理で広く用いられている**Total Variation (TV) 正則化**です．
 
+<div style="display: flex; gap: 12px; justify-content: center; align-items: flex-start;">
+  <img src="assets/house_edge.png" alt="画像1" style="width: 30%; max-width: 200px;">
+  <img src="assets/monarch_color_256_edge.png" alt="画像2" style="width: 30%; max-width: 200px;">
+  <img src="assets/peppers_color_edge.png" alt="画像3" style="width: 30%; max-width: 200px;">
+</div>
+
 さらに，エッジは単にスパースであるだけでなく，**エッジの方向や形状が揃っている**という構造を持つことが多いです．これを捉えるために，**混合$\ell_2/\ell_1$ノルム**を用いるアプローチもあります．これは，エッジの方向ごとにグループ化し，各グループ内でのスパース性を強調するものです．また，エッジの場所や形状は画像ごとに異なるため，**適応的なグループ化**を行う LOP-$\ell_2/\ell_1$ のような手法が有効です．LOP-$\ell_2/\ell_1$ に関する解説は [[lopl2l1|最適なブロック構造を学習するブロックスパース正則化：LOP-l2l1 の紹介]] を参照ください．
 
 ## 3. 特異値のスパース性（低ランク性）

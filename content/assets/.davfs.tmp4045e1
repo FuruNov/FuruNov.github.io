@@ -1,0 +1,272 @@
+@book{10.1145/3166186,
+  title = {The Sparse Fourier Transform: {{Theory}} and Practice},
+  author = {Hassanieh, Haitham},
+  year = {2018},
+  volume = {19},
+  publisher = {{Association for Computing Machinery and Morgan \& Claypool}},
+  abstract = {The Fourier transform is one of the most fundamental tools for computing the frequency representation of signals. It plays a central role in signal processing, communications, audio and video compression, medical imaging, genomics, astronomy, as well as many other areas. Because of its widespread use, fast algorithms for computing the Fourier transform can benefit a large number of applications. The fastest algorithm for computing the Fourier transform is the Fast Fourier Transform (FFT) which runs in near-linear time making it an indispensable tool for many applications. However, today, the runtime of the FFT algorithm is no longer fast enough especially for big data problems where each dataset can be few terabytes. Hence, faster algorithms that run in sublinear time, i.e., do not even sample all the data points, have become necessary.The Sparse Fourier Transform: Theory and Practice book shows how to address the above problem by developing the Sparse Fourier Transform algorithms and building practical systems that use these algorithms to solve key problems in six different applications.Part I of the book focuses on the theory front. It introduces the Sparse Fourier Transform algorithms: a family of sublinear time algorithms for computing the Fourier transform faster than FFT. The Sparse Fourier Transform is based on the insight that many real-world signals are sparse, i.e., most of the frequencies have negligible contribution to the overall signal. Exploiting this sparsity, the book introduces several new algorithms which encompass two main axes: runtime complexity and sampling complexity. The book presents nearly optimal Sparse Fourier Transform algorithms that are faster than FFT and have the lowest runtime complexity known to date. It also presents Sparse Fourier Transform algorithms with optimal sampling complexity in the average case and the same nearly optimal runtime complexity. These algorithms use the minimum number of input data samples and hence, reduce acquisition cost and I/O overhead.Part II of the book focuses on the systems front. It describes software and hardware architectures for leveraging the Sparse Fourier Transform to address practical problems in six applied fields. In the area of wireless networks, it demonstrates how to use the Sparse Fourier Transform to build a wireless receiver that captures GHz-wide signals without sampling at the Nyquist rate enabling wideband spectrum sensing and acquisition using cheap commodity hardware. In mobile systems, the book introduces a new GPS receiver design that both reduces the delay to find the location and decreases the power consumption. In computer graphics, light fields enable new virtual reality and computational photography applications like interactive viewpoint changes, depth extraction and refocusing. The book shows that reconstructing light field images using the Sparse Fourier Transform reduces camera sampling requirements and improves image reconstruction quality. In the area of medical imaging, the book described how to enable efficient magnetic resonance spectroscopy (MRS), a new medical imaging technique that can reveal biomarkers for diseases like autism and cancer. In Biochemistry, it shows how the Sparse Fourier Transform can reduce Nuclear Magnetic Resonance (NMR) experiment time from weeks to days, enabling high dimensional NMR needed for discovering complex protein structures. Finally, in digital circuits, the book develops a chip with the largest Fourier Transform to date for sparse data. It delivers a 0.75 million point Sparse Fourier Transform chip that consumes 40x less power than prior FFT VLSI implementations. All these systems customize the theoretical algorithms to capture the structure of sparsity in each application, and hence maximize the resulting gains. The book also presents prototypes and evaluations of these systems in accordance with the standards of each application domain.This book is a revised version of the author's 2016 ACM Dissertation Award winning Ph.D. thesis. The revisions include editing, formatting, and minor corrections.},
+  isbn = {978-1-947487-07-9}
+}
+
+@article{10.2307/2346178,
+  title = {Regression Shrinkage and Selection via the Lasso},
+  author = {Tibshirani, Robert},
+  year = {1996},
+  journal = {Journal of the Royal Statistical Society. Series B (Methodological)},
+  volume = {58},
+  number = {1},
+  eprint = {2346178},
+  eprinttype = {jstor},
+  pages = {267--288},
+  publisher = {[Royal Statistical Society, Wiley]},
+  issn = {00359246},
+  doi = {10.1111/j.2517-6161.1996.tb02080.x},
+  urldate = {2023-01-09},
+  abstract = {We propose a new method for estimation in linear models. The `lasso' minimizes the residual sum of squares subject to the sum of the absolute value of the coefficients being less than a constant. Because of the nature of this constraint it tends to produce some coefficients that are exactly 0 and hence gives interpretable models. Our simulation studies suggest that the lasso enjoys some of the favourable properties of both subset selection and ridge regression. It produces interpretable models like subset selection and exhibits the stability of ridge regression. There is also an interesting relationship with recent work in adaptive function estimation by Donoho and Johnstone. The lasso idea is quite general and can be applied in a variety of statistical models: extensions to generalized regression models and tree-based models are briefly described.}
+}
+
+@article{2009,
+  title = {Fast Local Algorithms for Large Scale Nonnegative Matrix and Tensor Factorizations},
+  author = {Cichocki, Andrzej and Phan, Anh-Huy},
+  year = {2009},
+  journal = {IEICE Transactions on Fundamentals of Electronics, Communications and Computer Sciences},
+  volume = {E92.A},
+  number = {3},
+  pages = {708--721},
+  doi = {10.1587/transfun.E92.A.708},
+  file = {C:\Users\furuh\Zotero\storage\B5L3N74M\Cichocki and Phan - 2009 - Fast local algorithms for large scale nonnegative .pdf}
+}
+
+@misc{20250208memoDeepResearchkaraZaiKaosuruXueShukomiyunikesiyon,
+  title = {20250208メモ：{{Deep Researchから再考する学術コミュニケーション}}},
+  journal = {Google Docs},
+  urldate = {2025-02-10},
+  abstract = {試論メモ：Deep Researchから再考する学術コミュニケーション  ひとまずDeep Researchに聞いてみた  本メモは、1時間で書いた論文を査読に通したという研究者による記事「What will AI do to (p)research? - Joshua Gans' Newsletter」に触発されたものである。同記事で経営学者のJoshua Gans氏は、研究（Research）のコストが検索（search）より下がるならば、検索以前に研究を行っておく「presearch（プレサーチ）」としての研究をする意味がなくなるのではないかと考察している。  たしかに、生成AIに...},
+  howpublished = {https://docs.google.com/document/u/0/d/1-oavBjxRvvsUZaAL7H1Lxcm\_O2qfmXp\_Ot459MLvbjA/mobilebasic?pli=1\&usp=embed\_facebook},
+  file = {C:\Users\furuh\Zotero\storage\ZJMENKFF\mobilebasic.html}
+}
+
+@article{5238742,
+  title = {Comparing Measures of Sparsity},
+  author = {Hurley, Niall and Rickard, Scott},
+  year = {2009},
+  journal = {IEEE Transactions on Information Theory},
+  volume = {55},
+  number = {10},
+  pages = {4723--4741},
+  doi = {10.1109/TIT.2009.2027527},
+  file = {C:\Users\furuh\Zotero\storage\8PDHP5U3\Hurley_Rickard_2009_Comparing measures of sparsity.pdf}
+}
+
+@article{8319524,
+  title = {Alternative to Extended Block Sparse Bayesian Learning and Its Relation to Pattern-Coupled Sparse Bayesian Learning},
+  author = {Wang, Lu and Zhao, Lifan and Rahardja, Susanto and Bi, Guoan},
+  year = {2018},
+  month = may,
+  journal = {IEEE Transactions on Signal Processing},
+  volume = {66},
+  number = {10},
+  pages = {2759--2771},
+  issn = {1941-0476},
+  doi = {10.1109/TSP.2018.2816574},
+  abstract = {We consider the problem of recovering block sparse signals with unknown block partition and propose a better alternative to the extended block sparse Bayesian learning (EBSBL). The underlying relationship between the proposed method EBSBL and pattern-coupled sparse Bayesian learning (PC-SBL) is explicitly revealed. The proposed method adopts a cluster-structured prior for sparse coefficients, which encourages dependencies among neighboring coefficients by properly manipulating the hyperparameters of the neighborhood. Due to entanglement of the hyperparameters, a joint sparsity assumption is made to yield a suboptimal analytic solution. The alternative algorithm avoids high dictionary coherence in EBSBL, reduces the unknowns of EBSBL, and explains the effectiveness of EBSBL. The proposed algorithm also avoids the vulnerability of parameter choice in PC-SBL. Results of comprehensive simulations demonstrate that the proposed algorithm achieves performance that is close to the best performance of PC-SBL. In addition, it outperforms EBSBL and other recently reported algorithms particularly under noisy and low sampling scenarios.},
+  langid = {american},
+  annotation = {abstractTranslation: 未知のブロック分割を持つブロックスパース信号を復元する問題を考察し、拡張ブロックスパースベイズ学習(EBSBL)に代わるより良い方法を提案する。提案手法EBSBLとパターン結合スパースベイズ学習(PC-SBL)の基本的な関係を明示的に明らかにする。提案手法は、スパース係数に対してクラスタ構造化事前分布を採用し、近傍のハイパーパラメータを適切に操作することで、近傍係数間の依存性を促す。ハイパーパラメータのもつれにより、共同スパース性が仮定され、最適な解析解が得られない。代替アルゴリズムはEBSBLにおける高い辞書コヒーレンスを回避し、EBSBLの未知数を減らし、EBSBLの有効性を説明する。また、提案アルゴリズムはPC-SBLにおけるパラメータ選択の脆弱性を回避する。包括的なシミュレーションの結果、提案アルゴリズムはPC-SBLの最高性能に近い性能を達成することが実証された。さらに、特にノイズの多い低サンプリングシナリオにおいて、EBSBLや最近報告された他のアルゴリズムを凌駕する。}
+}
+
+@article{9729560,
+  title = {Block-Sparse Recovery with Optimal Block Partition},
+  author = {Kuroda, Hiroki and Kitahara, Daichi},
+  year = {2022},
+  journal = {IEEE Transactions on Signal Processing},
+  volume = {70},
+  pages = {1506--1520},
+  doi = {10.1109/TSP.2022.3156283},
+  abstract = {This paper presents a convex recovery method for block-sparse signals whose block partitions are unknown a priori. We first introduce a nonconvex penalty function, where the block partition is adapted for the signal of interest by minimizing the mixed l2/l1 norm over all possible block partitions. Then, by exploiting a variational representation of the l2 norm, we derive the proposed penalty function as a suitable convex relaxation of the nonconvex one. For a block-sparse recovery model designed with the proposed penalty, we develop an iterative algorithm which is guaranteed to converge to a globally optimal solution. Numerical experiments demonstrate the effectiveness of the proposed method.},
+  langid = {american},
+  keywords = {Favorite},
+  file = {C:\Users\furuh\Zotero\storage\LAZQJH5T\Kuroda_Kitahara_2022_Block-sparse recovery with optimal block partition.pdf}
+}
+
+@article{abbeEntrywiseEigenvectorAnalysis2020,
+  title = {Entrywise Eigenvector Analysis of Random Matrices with Low Expected Rank},
+  author = {Abbe, Emmanuel and Fan, Jianqing and Wang, Kaizheng and Zhong, Yiqiao},
+  year = {2020},
+  month = jun,
+  journal = {The Annals of Statistics},
+  volume = {48},
+  number = {3},
+  issn = {0090-5364},
+  doi = {10.1214/19-AOS1854},
+  urldate = {2023-11-25},
+  abstract = {Recovering low-rank structures via eigenvector perturbation analysis is a common problem in statistical machine learning, such as in factor analysis, community detection, ranking, matrix completion, among others. While a large variety of bounds are available for average errors between empirical and population statistics of eigenvectors, few results are tight for entrywise analyses, which are critical for a number of problems such as community detection. This paper investigates entrywise behaviors of eigenvectors for a large class of random matrices whose expectations are low-rank, which helps settle the conjecture in Abbe et al. (2014b) that the spectral algorithm achieves exact recovery in the stochastic block model without any trimming or cleaning steps. The key is a first-order approximation of eigenvectors under the {$\ell$} {$\infty$} norm: u k {$\approx$} A u k * {$\lambda$} k * , where \{u k \} and \{ u k * \} are eigenvectors of a random matrix A and its expectation E A , respectively. The fact that the approximation is both tight and linear in A facilitates sharp comparisons between u k and u k * . In particular, it allows for comparing the signs of u k and u k * even if {\textbardbl} u k - u k * {\textbardbl} {$\infty$} is large. The results are further extended to perturbations of eigenspaces, yielding new {$\ell$} {$\infty$}-type bounds for synchronization ( {$\mathbb{Z}$} 2 -spiked Wigner model) and noisy matrix completion.},
+  file = {C:\Users\furuh\Zotero\storage\W3QJVA38\Abbe et al. - 2020 - Entrywise eigenvector analysis of random matrices .pdf}
+}
+
+@misc{abermanDeepSaliencyPrior2021,
+  title = {Deep {{Saliency Prior}} for {{Reducing Visual Distraction}}},
+  author = {Aberman, Kfir and He, Junfeng and Gandelsman, Yossi and Mosseri, Inbar and Jacobs, David E. and Kohlhoff, Kai and Pritch, Yael and Rubinstein, Michael},
+  year = {2021},
+  month = sep,
+  number = {arXiv:2109.01980},
+  eprint = {2109.01980},
+  primaryclass = {cs},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2109.01980},
+  urldate = {2023-12-03},
+  abstract = {Using only a model that was trained to predict where people look at images, and no additional training data, we can produce a range of powerful editing effects for reducing distraction in images. Given an image and a mask specifying the region to edit, we backpropagate through a state-of-the-art saliency model to parameterize a differentiable editing operator, such that the saliency within the masked region is reduced. We demonstrate several operators, including: a recoloring operator, which learns to apply a color transform that camouflages and blends distractors into their surroundings; a warping operator, which warps less salient image regions to cover distractors, gradually collapsing objects into themselves and effectively removing them (an effect akin to inpainting); a GAN operator, which uses a semantic prior to fully replace image regions with plausible, less salient alternatives. The resulting effects are consistent with cognitive research on the human visual system (e.g., since color mismatch is salient, the recoloring operator learns to harmonize objects' colors with their surrounding to reduce their saliency), and, importantly, are all achieved solely through the guidance of the pretrained saliency model, with no additional supervision. We present results on a variety of natural images and conduct a perceptual study to evaluate and validate the changes in viewers' eye-gaze between the original images and our edited results.},
+  archiveprefix = {arXiv},
+  keywords = {Computer Science - Computer Vision and Pattern Recognition,Computer Science - Graphics,Computer Science - Machine Learning},
+  file = {C\:\\Users\\furuh\\Zotero\\storage\\MU5FGCPA\\Aberman et al. - 2021 - Deep Saliency Prior for Reducing Visual Distractio.pdf;C\:\\Users\\furuh\\Zotero\\storage\\UVKGU2RW\\2109.html}
+}
+
+@book{absilOptimizationAlgorithmsMatrix2008,
+  title = {Optimization {{Algorithms}} on {{Matrix Manifolds}}},
+  author = {Absil, P.-A.},
+  year = {2008},
+  publisher = {Princeton University Press},
+  address = {Princeton},
+  collaborator = {Mahony, R. and Sepulchre, Rodolphe},
+  isbn = {978-0-691-13298-3 978-1-4008-3024-4},
+  langid = {english},
+  file = {C:\Users\furuh\Zotero\storage\XP7JDEXE\Absil - 2008 - Optimization Algorithms on Matrix Manifolds.pdf}
+}
+
+@misc{adachiTopologicalNumbersJlJulia2024,
+  title = {{{TopologicalNumbers}}.Jl: {{A Julia}} Package for Topological Number Computation},
+  shorttitle = {{{TopologicalNumbers}}.Jl},
+  author = {Adachi, Keisuke and Kanega, Minoru},
+  year = {2024},
+  month = jan,
+  number = {arXiv:2402.00885},
+  eprint = {2402.00885},
+  primaryclass = {cond-mat},
+  publisher = {arXiv},
+  doi = {10.48550/arXiv.2402.00885},
+  urldate = {2024-02-10},
+  abstract = {Topological insulators have been of considerable interest in the last decades. These materials show new states of matter that are insulating in the bulk but have conducting states on their surfaces. The conducting states on the surface are protected by the topology of the bulk band structure, and topological numbers, such as first Chern number, second Chern number, \${\textbackslash}mathbb\{Z\}\_2\$ number, etc., are used to characterize them. As a typical example, the quantum Hall effect has the quantized Hall conductivity, which can be calculated by the first Chern number. Other topological numbers similarly become important physical quantities that characterize the system, depending on the system dimension and symmetry classes. To obtain the topological numbers, we often need numerical calculations, and it may require an enormous amount of computation before convergence is achieved. Therefore, creating tools to easily compute these numbers will lead to advances in research for the topological phase of matters. So far, several methods have been reported that suggest that some topological numbers can be computed efficiently. However, since each method is specialized for a specific dimension or symmetry class, it is necessary to implement the algorithm for each problem, respectively. Our project, TopologicalNumbers.jl, aims to provide a package that can easily and efficiently compute topological numbers comprehensively in various dimensions and symmetry classes.},
+  archiveprefix = {arXiv},
+  keywords = {Condensed Matter - Materials Science,Condensed Matter - Mesoscale and Nanoscale Physics},
+  file = {C:\Users\furuh\Zotero\storage\TGNPVI7V\Adachi and Kanega - 2024 - TopologicalNumbers.jl A Julia package for topolog.pdf}
+}
+
+@article{adamekLassoInferenceHighdimensional2023,
+  title = {Lasso Inference for High-Dimensional Time Series},
+  author = {Adamek, Robert and Smeekes, Stephan and Wilms, Ines},
+  year = {2023},
+  month = aug,
+  journal = {Journal of Econometrics},
+  volume = {235},
+  number = {2},
+  pages = {1114--1143},
+  issn = {0304-4076},
+  doi = {10.1016/j.jeconom.2022.08.008},
+  urldate = {2025-05-30},
+  abstract = {In this paper we develop valid inference for high-dimensional time series. We extend the desparsified lasso to a time series setting under Near-Epoch Dependence (NED) assumptions allowing for non-Gaussian, serially correlated and heteroskedastic processes, where the number of regressors can possibly grow faster than the time dimension. We first derive an error bound under weak sparsity, which, coupled with the NED assumption, means this inequality can also be applied to the (inherently misspecified) nodewise regressions performed in the desparsified lasso. This allows us to establish the uniform asymptotic normality of the desparsified lasso under general conditions, including for inference on parameters of increasing dimensions. Additionally, we show consistency of a long-run variance estimator, thus providing a complete set of tools for performing inference in high-dimensional linear time series models. Finally, we perform a simulation exercise to demonstrate the small sample properties of the desparsified lasso in common time series settings.},
+  langid = {english},
+  keywords = {High-dimensional data,Honest inference,Lasso,Time series},
+  annotation = {abstractTranslation: 本稿では、高次元時系列に対する有効な推論手法を開発する。非ガウス性、系列相関、および異分散性を許容するNear-Epoch Dependence（NED）仮定の下で、デスパース化lassoを時系列設定に拡張する。ここでは、回帰変数の数が時間次元よりも高速に増加する可能性がある。まず、弱いスパース性の下で誤差限界を導出し、NED仮定と組み合わせることで、この不等式をデスパース化lassoで行われる（本質的に誤特定された）ノードワイズ回帰にも適用できることを示す。これにより、増加する次元のパラメータに関する推論を含む一般的な条件下で、デスパース化lassoの一様漸近正規性を確立できる。さらに、長期分散推定量の一致性を示し、高次元線形時系列モデルにおける推論を実行するための完全なツールセットを提供する。最後に、シミュレーション実験を行い、一般的な時系列設定におけるデスパース化lassoの小標本特性を実証する。},
+  file = {C\:\\Users\\furuh\\Zotero\\storage\\5LCKW5HF\\Adamek et al. - 2023 - Lasso inference for high-dimensional time series.pdf;C\:\\Users\\furuh\\Zotero\\storage\\93G3AX85\\S0304407622001804.html}
+}
+
+@misc{adamsLearningStructureDeep2010,
+  title = {Learning the {{Structure}} of {{Deep Sparse Graphical Models}}},
+  author = {Adams, Ryan Prescott and Wallach, Hanna M. and Ghahramani, Zoubin},
+  year = {2010},
+  month = aug,
+  number = {arXiv:1001.0160},
+  eprint = {1001.0160},
+  primaryclass = {stat},
+  publisher = {arXiv},
+  urldate = {2022-07-17},
+  abstract = {Deep belief networks are a powerful way to model complex probability distributions. However, learning the structure of a belief network, particularly one with hidden units, is difficult. The Indian buffet process has been used as a nonparametric Bayesian prior on the directed structure of a belief network with a single infinitely wide hidden layer. In this paper, we introduce the cascading Indian buffet process (CIBP), which provides a nonparametric prior on the structure of a layered, directed belief network that is unbounded in both depth and width, yet allows tractable inference. We use the CIBP prior with the nonlinear Gaussian belief network so each unit can additionally vary its behavior between discrete and continuous representations. We provide Markov chain Monte Carlo algorithms for inference in these belief networks and explore the structures learned on several image data sets.},
+  archiveprefix = {arXiv},
+  keywords = {Statistics - Machine Learning},
+  file = {C\:\\Users\\furuh\\Zotero\\storage\\6LL4ZI4A\\Adams et al_2010_Learning the Structure of Deep Sparse Graphical Models.pdf;C\:\\Users\\furuh\\Zotero\\storage\\QC9F3QZZ\\1001.html}
+}
+
+@misc{ADOPTHaipaparametaniYiCunsezuniZuiShiretodeShouShusuruShiYingDeZuiShiHuaarugorizumunoTiAnPdf,
+  title = {{{ADOPT}}: ハイパーパラメータに依存せずに最適レートで収束する適応的最適化アルゴリズムの提案.Pdf},
+  file = {C:\Users\furuh\Zotero\storage\B3G7D83X\ADOPT ハイパーパラメータに依存せずに最適レートで収束する適応的最適化アルゴリズムの提案.pd.pdf}
+}
+
+@article{afkhamLearningRegularizationParameters2021,
+  title = {Learning Regularization Parameters of Inverse Problems via Deep Neural Networks},
+  author = {Afkham, Babak Maboudi and Chung, Julianne and Chung, Matthias},
+  year = {2021},
+  month = oct,
+  journal = {Inverse Problems},
+  volume = {37},
+  number = {10},
+  pages = {105017},
+  issn = {0266-5611, 1361-6420},
+  doi = {10.1088/1361-6420/ac245d},
+  urldate = {2024-02-01},
+  abstract = {In this work, we describe a new approach that uses deep neural networks (DNN) to obtain regularization parameters for solving inverse problems. We consider a supervised learning approach, where a network is trained to approximate the mapping from observation data to regularization parameters. Once the network is trained, regularization parameters for newly obtained data are computed by efficient forward propagation of the DNN. We show that a wide variety of regularization functionals, forward models, and noise models may be considered. The network-obtained regularization parameters can be computed more efficiently and may even lead to more accurate solutions compared to existing regularization parameter selection methods. We emphasize that the key advantage of using DNNs for learning regularization parameters, compared to previous works on learning via bilevel optimization or empirical Bayes risk minimization, is greater generalizability. That is, rather than computing one set of parameters that is optimal with respect to one particular design objective, DNN-computed regularization parameters are tailored to the specific features or properties of the newly observed data. Thus, our approach may better handle cases where the observation is not a close representation of the training set. Furthermore, we avoid the need for expensive and challenging bilevel optimization methods as utilized in other existing training approaches. Numerical results demonstrate that trained DNNs can predict regularization parameters faster and better than existing methods, hence resulting in more accurate solutions to inverse problems.},
+  file = {C:\Users\furuh\Zotero\storage\GW8Q3J8V\Afkham et al. - 2021 - Learning regularization parameters of inverse prob.pdf}
+}
+
+@article{afsharCOVIDCTMDCOVID19Computed2021,
+  title = {{{COVID-CT-MD}}, {{COVID-19}} Computed Tomography Scan Dataset Applicable in Machine Learning and Deep Learning},
+  author = {Afshar, Parnian and Heidarian, Shahin and Enshaei, Nastaran and Naderkhani, Farnoosh and Rafiee, Moezedin Javad and Oikonomou, Anastasia and Fard, Faranak Babaki and Samimi, Kaveh and Plataniotis, Konstantinos N. and Mohammadi, Arash},
+  year = {2021},
+  month = apr,
+  journal = {Scientific Data},
+  volume = {8},
+  number = {1},
+  pages = {121},
+  publisher = {Nature Publishing Group},
+  issn = {2052-4463},
+  doi = {10.1038/s41597-021-00900-3},
+  urldate = {2025-06-09},
+  abstract = {Novel Coronavirus (COVID-19) has drastically overwhelmed more than 200 countries affecting millions and claiming almost 2 million lives, since its emergence in late 2019. This highly contagious disease can easily spread, and if not controlled in a timely fashion, can rapidly incapacitate healthcare systems. The current standard diagnosis method, the Reverse Transcription Polymerase Chain Reaction (RT- PCR), is time consuming, and subject to low sensitivity. Chest Radiograph (CXR), the first imaging modality to be used, is readily available and gives immediate results. However, it has notoriously lower sensitivity than Computed Tomography (CT), which can be used efficiently to complement other diagnostic methods. This paper introduces a new COVID-19 CT scan dataset, referred to as COVID-CT-MD, consisting of not only COVID-19 cases, but also healthy and participants infected by Community Acquired Pneumonia (CAP). COVID-CT-MD dataset, which is accompanied with lobe-level, slice-level and patient-level labels, has the potential to facilitate the COVID-19 research, in particular COVID-CT-MD can assist in development of advanced Machine Learning (ML) and Deep Neural Network (DNN) based solutions.},
+  copyright = {2021 The Author(s)},
+  langid = {english},
+  keywords = {Imaging,Viral infection},
+  file = {C:\Users\furuh\Zotero\storage\H9TNK3QA\Afshar et al. - 2021 - COVID-CT-MD, COVID-19 computed tomography scan dataset applicable in machine learning and deep learn.pdf}
+}
+
+@inproceedings{aftabMultiHeadReluImplicit2022,
+  title = {Multi-{{Head Relu Implicit Neural Representation Networks}}},
+  booktitle = {{{ICASSP}} 2022 - 2022 {{IEEE International Conference}} on {{Acoustics}}, {{Speech}} and {{Signal Processing}} ({{ICASSP}})},
+  author = {Aftab, Arya and Morsali, Alireza and Ghaemmaghami, Shahrokh},
+  year = {2022},
+  month = may,
+  pages = {2510--2514},
+  issn = {2379-190X},
+  doi = {10.1109/ICASSP43922.2022.9747352},
+  urldate = {2023-10-14},
+  abstract = {In this paper, a novel multi-head multi-layer perceptron (MLP) structure is presented for implicit neural representation (INR). Since conventional rectified linear unit (ReLU) networks are shown to exhibit spectral bias towards learning low-frequency features of the signal, we aim at mitigating this defect by taking advantage of local structure of the signals. To be more specific, an MLP is used to capture the global features of the underlying generator function of the desired signal. Then, several heads are utilized to reconstruct disjoint local features of the signal, and to reduce the computational complexity, sparse layers are deployed for attaching heads to the body. Through various experiments, we show that the proposed model does not suffer from the special bias of conventional ReLU networks and has superior generalization capabilities. Finally, simulation results confirm that the proposed multi-head structure outperforms existing INR methods with considerably less computational cost. The source code is available at https://github.com/AlirezaMorsali/MH-RELU-INR},
+  file = {C\:\\Users\\furuh\\Zotero\\storage\\GHKTKAZ9\\Aftab et al. - 2022 - Multi-Head Relu Implicit Neural Representation Net.pdf;C\:\\Users\\furuh\\Zotero\\storage\\PJ9NSELM\\9747352.html}
+}
+
+@inproceedings{agarwalFindingApproximateLocal2017,
+  title = {Finding Approximate Local Minima Faster than Gradient Descent},
+  booktitle = {Proceedings of the 49th {{Annual ACM SIGACT Symposium}} on {{Theory}} of {{Computing}}},
+  author = {Agarwal, Naman and {Allen-Zhu}, Zeyuan and Bullins, Brian and Hazan, Elad and Ma, Tengyu},
+  year = {2017},
+  month = jun,
+  pages = {1195--1199},
+  publisher = {ACM},
+  address = {Montreal Canada},
+  doi = {10.1145/3055399.3055464},
+  urldate = {2024-09-21},
+  abstract = {We design a non-convex second-order optimization algorithm that is guaranteed to return an approximate local minimum in time which scales linearly in the underlying dimension and the number of training examples. The time complexity of our algorithm to find an approximate local minimum is even faster than that of gradient descent to find a critical point. Our algorithm applies to a general class of optimization problems including training a neural network and other non-convex objectives arising in machine learning.},
+  isbn = {978-1-4503-4528-6},
+  langid = {english},
+  annotation = {abstractTranslation: 我々は、近似的な局所最小値を、基底次元と学習例数に対して線形にスケールする時間で返すことが保証された非凸2次最適化アルゴリズムを設計する。近似的な局所最小値を求める我々のアルゴリズムの時間複雑度は、臨界点を求める勾配降下よりもさらに高速である。本アルゴリズムは、ニューラルネットワークの訓練や、機械学習で生じる他の非凸目標を含む、一般的な最適化問題に適用可能である。},
+  file = {C:\Users\furuh\Zotero\storage\EY6PCPF5\Agarwal et al. - 2017 - Finding approximate local minima faster than gradient descent.pdf}
+}
+
+@article{aghamohammadiSelfRepresentationBased2025,
+  title = {Self Representation Based Methods for Tensor Completion Problem},
+  author = {Aghamohammadi, Faezeh and Shakeri, Fatemeh},
+  year = {2025},
+  month = mar,
+  journal = {Journal of Computational and Applied Mathematics},
+  volume = {457},
+  pages = {116297},
+  issn = {0377-0427},
+  doi = {10.1016/j.cam.2024.116297},
+  urldate = {2024-11-06},
+  abstract = {Tensor, the higher-order data array, naturally arises in many fields, such as information sciences, seismic data reconstruction, physics, video inpainting and so on. In this paper, we intend to provide a new model to recover a tensor, based on self-representation, for the all-mode unfoldings of the desired tensor, regardless of the tensor rank. The suggested idea generalizes self-representation to tensor and recovers an incomplete tensor by reconstructing one fiber by others in such a way that they all belong to the same subspace. We design least-square and low-rank self-representation algorithms based on the Linearized Alternating Direction Method utilizing this concept. We sh
